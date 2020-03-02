@@ -34,25 +34,6 @@ typedef IloArray<IloBoolVarArray> IloBoolVarArray2;
 typedef IloArray<IloBoolVarArray2> IloBoolVarArray3;
 
 
-void printErrorAndExit(const string &str);
-double runTime(const clock_t &start);
-string getNowTime();
-bool lessThanReal(const double &lhs, const double &rhs);
-bool greaterThanReal(const double &lhs, const double &rhs);
-bool equalToReal(const double &lhs, const double &rhs);
-bool lessThanReal(const double &lhs, const double &rhs, const double &threshold);
-bool greaterThanReal(const double &lhs, const double &rhs, const double &threshold);
-bool equalToReal(const double &lhs, const double &rhs, const double &threshold);
-void printSeparator(const int &numOfEnter, const int &vertical, const int &horizontal, 
-	const char &character);
-void printSeparator(const int &numOfEnter, const int &vertical, const int &horizontal,
-	const char &character, ofstream &os);
-
-
-template<typename T>
-IDType getID(const T &rhs) { return rhs.getID(); }
-
-
 template<typename T>
 void print(const T &cont, const int &num) {
 	int i = 0;
