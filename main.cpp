@@ -1,13 +1,11 @@
 #include"linklist.h"
-#include"10.h"
+#include"17.h"
 
 
 int main() {
-	string str1 = "";
-	string str2 = ".*";
-
+	const string digits = "23";
 	Solution sol;
-	cout << sol.isMatch(str1, str2) << endl;
+	vector<string> ans = sol.letterCombinations(digits);
 	return 0;
 }
 
