@@ -18,6 +18,7 @@
     <ClInclude Include="17.h" />
     <ClInclude Include="19.h" />
     <ClInclude Include="2.h" />
+    <ClInclude Include="20.h" />
     <ClInclude Include="206.h" />
     <ClInclude Include="3.h" />
     <ClInclude Include="4.h" />
