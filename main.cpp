@@ -1,11 +1,9 @@
-#include"linklist.h"
-#include"17.h"
+#include"72.h"
 
 
 int main() {
-	const string digits = "23";
 	Solution sol;
-	vector<string> ans = sol.letterCombinations(digits);
+	int ans = sol.minDistance("horse", "ros");
 	return 0;
 }
 
