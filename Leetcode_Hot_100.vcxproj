@@ -45,6 +45,7 @@
     <ClInclude Include="75.h" />
     <ClInclude Include="76.h" />
     <ClInclude Include="78.h" />
+    <ClInclude Include="79.h" />
     <ClInclude Include="linklist.h" />
   </ItemGroup>
   <ItemGroup>
