@@ -48,7 +48,9 @@
     <ClInclude Include="79.h" />
     <ClInclude Include="84.h" />
     <ClInclude Include="85.h" />
+    <ClInclude Include="94.h" />
     <ClInclude Include="linklist.h" />
+    <ClInclude Include="Tree.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
