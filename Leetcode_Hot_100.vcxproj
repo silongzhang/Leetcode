@@ -16,6 +16,7 @@
     <ClInclude Include="101.h" />
     <ClInclude Include="102.h" />
     <ClInclude Include="104.h" />
+    <ClInclude Include="105.h" />
     <ClInclude Include="11.h" />
     <ClInclude Include="15.h" />
     <ClInclude Include="17.h" />

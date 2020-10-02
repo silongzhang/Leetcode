@@ -3,6 +3,7 @@
 #include<iostream>
 #include<vector>
 #include<unordered_map>
+#include<stack>
 #include"Tree.h"
 
 using namespace std;
@@ -30,6 +31,44 @@ public:
 			unMap[inorder[i]] = i;
 
 		return subBuildTree(preorder, 0, preorder.size() - 1, inorder, 0, inorder.size() - 1);
+	}
+};
+
+
+class Solution2 {
+public:
+	TreeNode * buildTree(vector<int>& preorder, vector<int>& inorder) {
+		if (preorder.size() != inorder.size()) exit(1);
+		if (preorder.empty()) return NULL;
+
+		stack<TreeNode*> stk;
+		auto root = new TreeNode(preorder[0]);
+		auto lastNode = root;
+		stk.push(lastNode);
+		size_t prePos = 1;
+		size_t inPos = 0;
+		while (inPos < inorder.size()) {
+			while (stk.top()->val != inorder[inPos] && prePos < preorder.size()) {
+				auto currNode = new TreeNode(preorder[prePos]);
+				lastNode->left = currNode;
+				lastNode = currNode;
+				stk.push(currNode);
+				++prePos;
+			}
+			while (!stk.empty() && stk.top()->val == inorder[inPos]) {
+					lastNode = stk.top();
+					stk.pop();
+					++inPos;
+			}
+			if (prePos < preorder.size()) {
+				auto currNode = new TreeNode(preorder[prePos]);
+				lastNode->right = currNode;
+				lastNode = currNode;
+				stk.push(currNode);
+				++prePos;
+			}
+		}
+		return root;
 	}
 };
 
